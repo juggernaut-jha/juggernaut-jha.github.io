@@ -1,0 +1,52 @@
+I hereby claim:
+
+  * I am an admin of https://juggernaut-jha.github.io
+  * I am theslytherin (https://keybase.io/theslytherin) on keybase.
+  * I have a public key ASDp4Pp7LAuzk7893JlV9iX1pKMMlO1961UyCdpFZlZQcQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01015ee2552cb4934cdb6309b2a106ff2e1a8e5c37125bf26652cc72fb25d0d2c90a0a",
+      "host": "keybase.io",
+      "kid": "0120e9e0fa7b2c0bb393bf3ddc9955f625f5a4a30c94ed7deb553209da45665650710a",
+      "uid": "43fb49068aa8f8d4f757c8180a558819",
+      "username": "theslytherin"
+    },
+    "merkle_root": {
+      "ctime": 1611139994,
+      "hash": "69613388cabbe0dffb19088d4e06e2cf0d916a8809498a19ba610901f3747a52cec32ad6c713644697d438dee99314b0dd92a265aaf439e2dbecb63e3ed1e837",
+      "hash_meta": "334efaacac860d6c695b5edd7f55f7461e295f762d892c13c8ab97d1a9f88080",
+      "seqno": 18844379
+    },
+    "service": {
+      "entropy": "XrSJ+Nif/rwEvWWpmzqmBpR6",
+      "hostname": "juggernaut-jha.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1611140024,
+  "expire_in": 504576000,
+  "prev": "c55fb28f721995f6e1e5cbda00c589d2abba0e93d3160b6c92742dcbc5b758b3",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg6eD6eywLs5O/PdyZVfYl9aSjDJTtfetVMgnaRWZWUHEKp3BheWxvYWTESpcCD8QgxV+yj3IZlfbh5cvaAMWJ0qu6DpPTFgtsknQty8W3WLPEIJvrouCHwzS5bBdknZ50jJ2MpGKur+Xyc8tA5l7UH7P7AgHCo3NpZ8RAWh9U88yyxC/i2P0OUV7r69LIlaaYSuWnfHuBFFDkapjCnojp/yvmuzJL1cWCuODnjZ3FI5PaRsFsW4I3oQtkCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIO5aDJfUa867V4C4C0+nHLSQSmHhEzZ62v+EDDWHvzswo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/theslytherin
+
+==================================================================
