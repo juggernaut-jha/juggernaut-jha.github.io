@@ -1,0 +1,1596 @@
+html {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    min-height: 100%;
+}
+
+#propic {
+    border-radius: 5px;
+    border-style: solid;
+    float: right;
+    max-width: 200px;
+    width: 40%;
+}
+
+#name {
+    font-size: 2em;
+    margin-bottom: 0.4em;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        font-size: 1em;
+        margin: 0;
+        padding: 1em;
+    }
+
+    #propic {
+        border-width: 2px;
+        margin: 0.5em 0 0.5em 1.5em;
+        max-width: 170px;
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1010px) {
+    body {
+        font-size: 1.1em;
+        margin: 0;
+        padding: 1em 10%;
+    }
+
+    #propic {
+        border-width: 3px;
+        margin: 0.5em 0 1em 2em;
+    }
+}
+
+@media only screen and (min-width: 1010px) {
+    body {
+        font-size: 1.1em;
+        margin: 0;
+        padding: 1em 20%;
+    }
+
+    #propic {
+        border-width: 3px;
+        margin: 0.5em 0 1em 2em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #propic {
+        float: none;
+        margin: 0 0 0.5em 0;
+        width: 40%;
+    }
+
+    #propicDiv {
+        text-align: center;
+    }
+
+    #name {
+        margin-bottom: 0.7em;
+        text-align: center;
+    }
+}
+
+#headerbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+            justify-content: space-between;
+    margin-top: 0.7em;
+    width: 85%;
+}
+
+#kerbb {
+    color: inherit;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+#kerb {
+    color: inherit;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+            justify-content: space-between;
+}
+
+a.navbutton {
+    border-radius: 5px;
+    border-style: none;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    text-decoration: none;
+}
+
+hr {
+    border-style: solid;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    width: 100%;
+}
+
+@media only screen and (max-width: 30em) {
+    #headerbar {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 42.8em) {
+    #headerbar {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    #kerb {
+        margin-bottom: 0.6em;
+    }
+
+    #navbar {
+        max-width: 23em;
+        width: 100%;
+    }
+
+    a.navbutton {
+        padding: 0.2em 0.65em;
+    }
+}
+
+@media only screen and (min-width: 42.8em) and (max-width: 50em) {
+    #navbar {
+        width: 70%;
+    }
+
+    a.navbutton {
+        padding: 0.2em 0.8em;
+    }
+}
+
+@media only screen and (min-width: 50em) and (max-width: 53.5em) {
+    #navbar {
+        width: 73%;
+    }
+
+    a.navbutton {
+        padding: 0.2em 0.65em;
+    }
+}
+
+@media only screen and (min-width: 53.5em) {
+    #navbar {
+        max-width: 26em;
+        min-width: 23em;
+        width: 65%;
+    }
+
+    a.navbutton {
+        padding: 0.2em 0.8em;
+    }
+}
+
+div.infoList {
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+span.emp{
+    color: #16a5a5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+span.infoDesc {
+    margin-left: -2em;
+    margin-right: 0.5em;
+}
+
+span.infoDesc, span.infoItem {
+    font-size: 1em;
+}
+
+#longerInfoList > br {
+    margin-bottom: 0.5em;
+}
+
+a.navbutton:hover {
+    cursor: pointer;
+}
+
+div.content {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 85%;
+}
+
+div.hiddenItem {
+    display: none;
+}
+
+div.contentDesc {
+    margin-bottom: 1em;
+}
+
+div.activity {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+div.activityHeading {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+div.activity a {
+    width: 25%;
+    max-width: 150px;
+}
+
+div.activity img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    div.activity {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        margin-bottom: 3em;
+    }
+
+    div.activity > div {
+        margin-top: 1.5em;
+    }
+
+    div.activity > div.activityNoLogo {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    div.activity {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-bottom: 2em;
+    }
+
+    div.activity > div {
+        margin-right: 2em;
+        width: 75%;
+    }
+
+    div.activity > div.activityNoLogo {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+div#footer {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    font-size: 0.85em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+#glider {
+    height: 40px;
+}
+
+@media only screen and (min-width: 921px) {
+    div.twocols {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    div.twocols > div.col {
+        width: 47%;
+    }
+}
+
+div.subject {
+    margin-bottom: 0.5em;
+}
+
+div.subject > div {
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+}
+
+span.toggler {
+    text-decoration: underline;
+}
+
+span.toggler:hover {
+    cursor: pointer;
+}
+
+div.course {
+    margin-bottom: 2em;
+}
+
+#links > ul {
+    margin-top: -0.7em;
+}
+
+#links ul > li {
+    margin-bottom: 0.15em;
+}
+
+div.surveyQuestion {
+    margin-bottom: 1.6em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+div.sliderWithNums {
+    width: 12em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0.5em;
+}
+
+span.sliderDesc {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+input.surveyTextbox, textarea.surveyTextbox {
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    font-size: 0.8em;
+    border-style: ridge;
+    border-radius: 6px;
+    padding: 0.2em 0.5em;
+}
+
+input.surveyTextbox {
+    margin-left: 0.5em;
+}
+
+textarea.surveyTextbox {
+    width: 100%;
+    height: 5em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+
+#surveySubmitQuestion {
+    margin-top: 2.5em;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 4em;
+}
+
+div.checkboxItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0.8em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+div.checkboxItem > input {
+    margin: 0.4em 0.5em 0.2em 0.5em;
+}
+
+div.checkboxItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 0.3em;
+}
+
+div.project {
+    margin-bottom: 0.5em;
+}
+
+div.project span.toggler {
+    margin-right: 1em;
+}
+
+div.projectDesc {
+    margin-bottom: 1em;
+    margin-top: 0.3em;
+}
+
+div.projectDesc p {
+    margin: 0.6em auto;
+}
+
+div#projects h3 {
+    margin-bottom: 0.8em;
+    margin-top: 1.5em;
+}
+html {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    min-height: 100%;
+}
+
+#propic {
+    border-radius: 5px;
+    border-style: solid;
+    float: right;
+    max-width: 200px;
+    width: 40%;
+}
+
+#name {
+    font-size: 2em;
+    margin-bottom: 0.4em;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        font-size: 1em;
+        margin: 0;
+        padding: 1em;
+    }
+
+    #propic {
+        border-width: 2px;
+        margin: 0.5em 0 0.5em 1.5em;
+        max-width: 170px;
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1010px) {
+    body {
+        font-size: 1.1em;
+        margin: 0;
+        padding: 1em 10%;
+    }
+
+    #propic {
+        border-width: 3px;
+        margin: 0.5em 0 1em 2em;
+    }
+}
+
+@media only screen and (min-width: 1010px) {
+    body {
+        font-size: 1.1em;
+        margin: 0;
+        padding: 1em 20%;
+    }
+
+    #propic {
+        border-width: 3px;
+        margin: 0.5em 0 1em 2em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #propic {
+        float: none;
+        margin: 0 0 0.5em 0;
+        width: 40%;
+    }
+
+    #propicDiv {
+        text-align: center;
+    }
+
+    #name {
+        margin-bottom: 0.7em;
+        text-align: center;
+    }
+}
+
+#headerbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+            justify-content: space-between;
+    margin-top: 0.7em;
+    width: 85%;
+}
+
+#kerb {
+    color: inherit;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+            justify-content: space-between;
+}
+
+a.navbutton {
+    border-radius: 5px;
+    border-style: none;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    text-decoration: none;
+}
+
+hr {
+    border-style: solid;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    width: 100%;
+}
+
+@media only screen and (max-width: 30em) {
+    #headerbar {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 42.8em) {
+    #headerbar {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    #kerb {
+        margin-bottom: 0.6em;
+    }
+
+    #navbar {
+        max-width: 23em;
+        width: 100%;
+    }
+
+    a.navbutton {
+        padding: 0.2em 0.65em;
+    }
+}
+
+@media only screen and (min-width: 42.8em) and (max-width: 50em) {
+    #navbar {
+        width: 70%;
+    }
+
+    a.navbutton {
+        padding: 0.2em 0.8em;
+    }
+}
+
+@media only screen and (min-width: 50em) and (max-width: 53.5em) {
+    #navbar {
+        width: 73%;
+    }
+
+    a.navbutton {
+        padding: 0.2em 0.65em;
+    }
+}
+
+@media only screen and (min-width: 53.5em) {
+    #navbar {
+        max-width: 26em;
+        min-width: 23em;
+        width: 65%;
+    }
+
+    a.navbutton {
+        padding: 0.2em 0.8em;
+    }
+}
+
+div.infoList {
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+span.infoDesc {
+    margin-left: -2em;
+    margin-right: 0.5em;
+}
+
+span.infoDesc, span.infoItem {
+    font-size: 1em;
+}
+
+#longerInfoList > br {
+    margin-bottom: 0.5em;
+}
+
+a.navbutton:hover {
+    cursor: pointer;
+}
+
+div.content {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 85%;
+}
+
+div.hiddenItem {
+    display: none;
+}
+
+div.contentDesc {
+    margin-bottom: 1em;
+}
+
+div.activity {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+div.activityHeading {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+div.activity a {
+    width: 25%;
+    max-width: 150px;
+}
+
+div.activity img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    div.activity {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        margin-bottom: 3em;
+    }
+
+    div.activity > div {
+        margin-top: 1.5em;
+    }
+
+    div.activity > div.activityNoLogo {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    div.activity {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-bottom: 2em;
+    }
+
+    div.activity > div {
+        margin-right: 2em;
+        width: 75%;
+    }
+
+    div.activity > div.activityNoLogo {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+div#footer {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    font-size: 0.85em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+#glider {
+    height: 40px;
+}
+
+@media only screen and (min-width: 921px) {
+    div.twocols {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    div.twocols > div.col {
+        width: 47%;
+    }
+}
+
+div.subject {
+    margin-bottom: 0.5em;
+}
+
+div.subject > div {
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+}
+
+span.toggler {
+    text-decoration: underline;
+}
+
+span.toggler:hover {
+    cursor: pointer;
+}
+
+div.course {
+    margin-bottom: 2em;
+}
+
+#links > ul {
+    margin-top: -0.7em;
+}
+
+#links ul > li {
+    margin-bottom: 0.15em;
+}
+
+div.surveyQuestion {
+    margin-bottom: 1.6em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+div.sliderWithNums {
+    width: 12em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0.5em;
+}
+
+span.sliderDesc {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+input.surveyTextbox, textarea.surveyTextbox {
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    font-size: 0.8em;
+    border-style: ridge;
+    border-radius: 6px;
+    padding: 0.2em 0.5em;
+}
+
+input.surveyTextbox {
+    margin-left: 0.5em;
+}
+
+textarea.surveyTextbox {
+    width: 100%;
+    height: 5em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+
+#surveySubmitQuestion {
+    margin-top: 2.5em;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 4em;
+}
+
+div.checkboxItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0.8em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+div.checkboxItem > input {
+    margin: 0.4em 0.5em 0.2em 0.5em;
+}
+
+div.checkboxItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 0.3em;
+}
+
+div.project {
+    margin-bottom: 0.5em;
+}
+
+div.project span.toggler {
+    margin-right: 1em;
+}
+
+div.projectDesc {
+    margin-bottom: 1em;
+    margin-top: 0.3em;
+}
+
+div.projectDesc p {
+    margin: 0.6em auto;
+}
+
+div#projects h3 {
+    margin-bottom: 0.8em;
+    margin-top: 1.5em;
+}
+html {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    min-height: 100%;
+}
+
+#propic {
+    border-radius: 5px;
+    border-style: solid;
+    float: right;
+    max-width: 200px;
+    width: 40%;
+}
+
+#name {
+    font-size: 2em;
+    margin-bottom: 0.4em;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        font-size: 1em;
+        margin: 0;
+        padding: 1em;
+    }
+
+    #propic {
+        border-width: 2px;
+        margin: 0.5em 0 0.5em 1.5em;
+        max-width: 170px;
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1010px) {
+    body {
+        font-size: 1.1em;
+        margin: 0;
+        padding: 1em 10%;
+    }
+
+    #propic {
+        border-width: 3px;
+        margin: 0.5em 0 1em 2em;
+    }
+}
+
+@media only screen and (min-width: 1010px) {
+    body {
+        font-size: 1.1em;
+        margin: 0;
+        padding: 1em 20%;
+    }
+
+    #propic {
+        border-width: 3px;
+        margin: 0.5em 0 1em 2em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #propic {
+        float: none;
+        margin: 0 0 0.5em 0;
+        width: 40%;
+    }
+
+    #propicDiv {
+        text-align: center;
+    }
+
+    #name {
+        margin-bottom: 0.7em;
+        text-align: center;
+    }
+}
+
+#headerbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+            justify-content: space-between;
+    margin-top: 0.7em;
+    width: 85%;
+}
+
+#kerb {
+    color: inherit;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+            justify-content: space-between;
+}
+
+a.navbutton {
+    border-radius: 5px;
+    border-style: none;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    text-decoration: none;
+}
+
+hr {
+    border-style: solid;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    width: 100%;
+}
+
+@media only screen and (max-width: 30em) {
+    #headerbar {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 42.8em) {
+    #headerbar {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    #kerb {
+        margin-bottom: 0.6em;
+    }
+
+    #navbar {
+        max-width: 23em;
+        width: 100%;
+    }
+
+    a.navbutton {
+        padding: 0.2em 0.65em;
+    }
+}
+
+@media only screen and (min-width: 42.8em) and (max-width: 50em) {
+    #navbar {
+        width: 70%;
+    }
+
+    a.navbutton {
+        padding: 0.2em 0.8em;
+    }
+}
+
+@media only screen and (min-width: 50em) and (max-width: 53.5em) {
+    #navbar {
+        width: 73%;
+    }
+
+    a.navbutton {
+        padding: 0.2em 0.65em;
+    }
+}
+
+@media only screen and (min-width: 53.5em) {
+    #navbar {
+        max-width: 26em;
+        min-width: 23em;
+        width: 65%;
+    }
+
+    a.navbutton {
+        padding: 0.2em 0.8em;
+    }
+}
+
+div.infoList {
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+span.infoDesc {
+    margin-left: -2em;
+    margin-right: 0.5em;
+}
+
+span.infoDesc, span.infoItem {
+    font-size: 1em;
+}
+
+#longerInfoList > br {
+    margin-bottom: 0.5em;
+}
+
+a.navbutton:hover {
+    cursor: pointer;
+}
+
+div.content {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 85%;
+}
+
+div.hiddenItem {
+    display: none;
+}
+
+div.contentDesc {
+    margin-bottom: 1em;
+}
+
+div.activity {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+div.activityHeading {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+div.activity a {
+    width: 25%;
+    max-width: 150px;
+}
+
+div.activity img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    div.activity {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        margin-bottom: 3em;
+    }
+
+    div.activity > div {
+        margin-top: 1.5em;
+    }
+
+    div.activity > div.activityNoLogo {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    div.activity {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-bottom: 2em;
+    }
+
+    div.activity > div {
+        margin-right: 2em;
+        width: 75%;
+    }
+
+    div.activity > div.activityNoLogo {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+div#footer {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    font-size: 0.85em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+#glider {
+    height: 40px;
+}
+
+@media only screen and (min-width: 921px) {
+    div.twocols {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    div.twocols > div.col {
+        width: 47%;
+    }
+}
+
+div.subject {
+    margin-bottom: 0.5em;
+}
+
+div.subject > div {
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+}
+
+span.toggler {
+    text-decoration: underline;
+}
+
+span.toggler:hover {
+    cursor: pointer;
+}
+
+div.course {
+    margin-bottom: 2em;
+}
+
+#links > ul {
+    margin-top: -0.7em;
+}
+
+#links ul > li {
+    margin-bottom: 0.15em;
+}
+
+div.surveyQuestion {
+    margin-bottom: 1.6em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+div.sliderWithNums {
+    width: 12em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0.5em;
+}
+
+span.sliderDesc {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+input.surveyTextbox, textarea.surveyTextbox {
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    font-size: 0.8em;
+    border-style: ridge;
+    border-radius: 6px;
+    padding: 0.2em 0.5em;
+}
+
+input.surveyTextbox {
+    margin-left: 0.5em;
+}
+
+textarea.surveyTextbox {
+    width: 100%;
+    height: 5em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+
+#surveySubmitQuestion {
+    margin-top: 2.5em;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 4em;
+}
+
+div.checkboxItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0.8em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+div.checkboxItem > input {
+    margin: 0.4em 0.5em 0.2em 0.5em;
+}
+
+div.checkboxItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 0.3em;
+}
+
+div.project {
+    margin-bottom: 0.5em;
+}
+
+div.project span.toggler {
+    margin-right: 1em;
+}
+
+div.projectDesc {
+    margin-bottom: 1em;
+    margin-top: 0.3em;
+}
+
+div.projectDesc p {
+    margin: 0.6em auto;
+}
+
+div#projects h3 {
+    margin-bottom: 0.8em;
+    margin-top: 1.5em;
+}
+body {
+    color: #434343;
+}
+
+#propic {
+    border-color: #91dcffd3;
+}
+
+div.content a {
+    color: #93691a;
+}
+
+div.content a:visited {
+    color: #573902;
+}
+
+a.navbutton {
+    color: #000000;
+    background-color: #69ced1d3;
+}
+img.symbol {
+    height: 35pt;
+}
+
+div#footer {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 20pt;
+    width: 100%;
+}
+hr {
+    color: #00e1ff;
+}
+
+#linkk{
+    color: #165f5f
+}
+
+a.navbutton:hover {
+    background-color: #1397d463;
+}
+
+a.navbutton.current {
+    background-color: #16a5a5;
+}
+
+a.navbutton:active {
+    background-color: #f51313aa;
+}
+
+
+input.surveyTextbox, textarea.surveyTextbox {
+    background-color: #fff;
+    border-color: #d8d8d8;
+}
