@@ -1526,7 +1526,7 @@ div#projects h3 {
     margin-top: 1.5em;
 }
 body {
-    color: #434343;
+    color: #60b4b0;
 }
 
 #propic {
@@ -1534,11 +1534,11 @@ body {
 }
 
 div.content a {
-    color: #93691a;
+    color: #039e91;
 }
 
 div.content a:visited {
-    color: #573902;
+    color: #17a9e2;
 }
 
 a.navbutton {
