@@ -16,17 +16,13 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     -webkit-hyphens: auto;
         -ms-hyphens: auto;
             hyphens: auto;
     min-height: 100%;
-    color: #000000
 }
-#lalal{
-    font-family: 'Courier New',
-    color: #000000
-}
+
 #propic {
     border-radius: 5px;
     border-style: solid;
@@ -53,6 +49,38 @@ body {
         max-width: 170px;
         width: 35%;
     }
+}
+.glance{
+    text-align: center;
+    color : #000000;
+    border-style: hidden;
+    border-radius: 15px;
+    padding: 0.5%;
+
+}
+.super{
+
+    border-style: hidden;
+    border-radius: 15px;
+    padding: 0.5%;
+
+}
+#title{
+    color : #000000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#dateauth{
+    border-style: hidden;
+    padding: 00.05%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    color : #1e37c5;
+}
+#maindiv{
+    color : #000000;
+    font-family: 'Courier New', Courier, monospace;
+    
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1010px) {
@@ -151,6 +179,34 @@ a.navbutton {
     text-decoration: none;
 }
 
+a.blogbutton {
+    border-radius: 5px;
+    border-style: none;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #dd1616;
+}
+
+a.blogbuttondash {
+    border-radius: 5px;
+    border-style: none;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: #1666dd;
+}
+small.dateblog{
+    border-radius: 5px;
+    text-align: center;
+    border-style: none;
+    background-color: #ffffff;
+    color : #452355;
+}
 hr {
     border-style: solid;
     margin-bottom: 1.5em;
@@ -254,6 +310,8 @@ div.content {
         -ms-flex-positive: 1;
             flex-grow: 1;
     width: 85%;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
 }
 
 div.hiddenItem {
